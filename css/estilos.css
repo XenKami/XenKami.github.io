@@ -1,0 +1,66 @@
+a {
+    color: inherit;
+}
+
+body {
+    background: linear-gradient( to top, #0c36f0, white);
+    /*background-image: url("../img/miau.jpg");
+    background-size: cover;*/
+}
+
+.cabezera {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    background-color: #1c1b20;
+    border-radius: 15px;
+    color: rgb(253, 253, 253);
+}
+
+.cuerpo {
+    background-color: #4466fd;
+    margin-bottom: 20px;
+}
+
+.pie {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #e8e8e8;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+
+.documento {
+    font-family: sans-serif;
+    font-size: 21px;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.bordes {
+    border: 1px solid black;
+}
+
+.altura {
+    height: 80px;
+}
+
+.margenes {
+    margin: 25px auto;
+}
+
+/*ID*/
+
+#titulo_F{
+    color: lightblue;
+    text-shadow: lightblue;
+}
+
+#img{
+    display:none;
+}

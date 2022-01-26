@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/ajax.js"></script>
+
+    <title>CeMon-Index</title>
+</head>
+
+<body>
+    <div class="container margenes">
+
+        <div class="row cabezera justify-content-between">
+
+
+
+            <div class="col-12 menu">
+                <div class="row altura">
+                    <div class="col align-self-center">
+                        <center>RegistrAPP</center>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row justify-content-between">
+            <div class="col-12 documento">
+                <h2 id="titulo_F" >¿Por qué RegistrAPP?</h2>
+                <p>
+                    <p>
+                    Gracias al contexto actual de la pandemia COVID-19, se ha visto la necesidad de implementar soluciones
+                    a la problematica relacionada a continuidad de enseñanza presencial/remota. 
+                    </p>
+                    <p>La vuelta a clases presenciales, ha recaido en una problematica relacionada a la asistencia. El sistema informatico implementado en Duoc UC 
+                        ha presentado errores de registro, por lo que se ha solicitado implementar una aplicacion movil que ayude tanto a los funcionarios como a 
+                        los alumnos en el proceso de su registro de asistencia a clases.</p>
+                    <br>                   
+                    <p>
+                        Dentro de los errores captados dentro del proceso, se encontraron los siguientes:
+                        <ol>
+                            <li>Realización de múltiples tareas de parte del docente en la sala de clases.</li>
+                            <li>Falta de tiempo adecuado para el registro</li>
+                            <li>Confusión en el registro de los alumnos debido al no poder reconocer visualmente a los alumnos
+                                a causa de las mascarillas</li>
+                            <li>Olvido por parte del docente de realizar esta actividad</li>
+                        </ol>
+                    </p>                    
+                    Con el fin de terminar con esta problemática en forma definitiva, se ha contactado con el equipo informatico de
+                    Duoc UC para que desarrollen una Aplicación Móvil RegistrAPP capaz de ser utilizada en
+                    plataformas tanto como Android e iOS que permita que cada alumno registre su propia asistencia.
+                </p>
+                
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-between">
+            <div class="col-12 documento">
+        <p>Solucion propuesta por el equipo informatico:</p>
+        </div>
+            </div>
+            <br>
+        <div class="row justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/app1.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/app2.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/app3.png" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/app4.png" alt="Fourth slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+                <br>
+                <div class="Windows" onload=load()>
+                    <a href="#" class="btn btn-primary" onclick="mostrar()">Descargar por QR</a>
+                    <div id="img">
+                        <img src="img/QR.png" width="400px" alt="">
+                    </div>
+                </div>
+                <div class="Android" onload=load()>
+                    <a href="https://drive.google.com/file/d/1odDVr5V3Dp9o85Kl0FpUcMI8oiXiXhL5/view?usp=sharing" class="btn btn-primary" download="Regis APK">Descargar directa</a>
+                </div>
+        </div>
+        <div class="row pie documento justify-content-center">
+            <h6 class="titulo-final">&copy; Montserrat Ramírez | Axel Christiansen </h6>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let agent = navigator.userAgent;
+        function navegador(){
+        
+        window.onload.document.getElementById("demo").innerHTML = "User-agent:<br>" + agent;
+        } 
+        navegador();
+    </script>
+    <script>
+        function mostrar(){
+            document.getElementById('img').style.display='block'
+        }
+
+        function load() {
+          var ua = navigator.userAgent;
+           var wn = document.getElementById('Windows');
+           var ad = document.getElementById('Android');
+          if (ua.match('Win').length!=0) {
+              ad.remove();
+          }
+          if (ua.match('Win').length==0) {
+              wn.remove();
+          }
+          alert("evento load detectado!");
+        }
+        window.onload = load;
+
+
+    </script>
+</body>
+
+</html>
